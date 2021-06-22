@@ -1,0 +1,62 @@
+*{
+    margin: 25px;
+    border-radius: 20px;
+}
+
+header{
+    background-color: rgb(118, 187, 228);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+aside{
+    grid-column: 1/2;
+    background-color: rgb(67, 168, 199);
+}
+
+
+section{
+    grid-column: 2/5;
+    background-color: rgb(78, 200, 199);
+
+}
+
+footer{
+    text-align:center ;
+    background-color: rgb(1,1,1);
+    color: white;
+    padding: 10px;
+}
+
+.menu{/*letra Prueba*/
+    display: flex;
+}
+
+nav ul {
+     list-style: none;
+     padding: 3px;
+     color: cornsilk;
+     background: black;
+    
+ }
+
+.menu li {
+     width: 100%;
+     text-align: center;
+ }
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: chocolate;
+    height: 25px;
+    text-decoration: none;
+}
