@@ -1,0 +1,21 @@
+# Query: misestilos
+
+6 resultados - Archivos de 6
+
+fase3\autor.html:
+  12:     <link rel="stylesheet"href="css/misestilos.css">
+
+fase3\indexfase3.html:
+  9:     <link rel="stylesheet" href="css/misestilos.css">
+
+fase3\recurso1.html:
+  9:     <link rel="stylesheet"href="css/misestilos.css">
+
+fase3\recurso2.html:
+  10:     <link rel="stylesheet"href="css/misestilos.css">
+
+fase3\tema1.html:
+  10:     <link rel="stylesheet"href="css/misestilos.css">
+
+fase3\tema2.html:
+  9:     <link rel="stylesheet"href="css/misestilos.css">
