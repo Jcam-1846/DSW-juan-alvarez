@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/misestilos.css">
+
+    <style>
+        header {
+            /* eneable flex mode. */
+            display: flex;
+            /*llena todo el espacio de header.*/
+            align-items: center;
+            justify-content: space-between;
+            /*alinea los elementos en el centro. */
+
+        }
+
+
+        @media(max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: aqua;
+            }
+
+            header {
+                /*coloca los elementos verticales.*/
+                flex-direction: column;
+                /*alinea los items al principio(the left) of the header */
+                align-items: flex-start;
+            }
+
+        }
+    </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200" />
+        <h1>Interfaz de usuario e interaccion humano ordenador</h1>
+        <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200" />
+    </header>
+
+
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Temas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="tema1.html">tema 1</a></li>
+                                <li><a class="dropdown-item" href="tema2.html">tema 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Recursos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="recurso1.html">recurso 1</a></li>
+                                <li><a class="dropdown-item" href="recurso2.html">recurso 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                aprendizaje
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="aprendizaje1.html">aprendizaje 1</a></li>
+                                <li><a class="dropdown-item" href="aprendizaje2.html">aprendizaje 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="autor.html">autor</a>
+                                </li>
+                            </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </nav>
+    </head>
+
+    <body>
+
+        <!-- Sección del encabezado -->
+        <header>
+            <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200">
+            <h1>Diseño de Sitios Web:La interfaz de usuarios, interacción Humano Ordenador </h1>
+            <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200">
+
+
+
+        </header>
+
+        <!-- Barra de menú horizontal -->
+        <nav>
+
+            <ul class="menu">
+                <ul>
+                    <li><a href="indexfase_3.html">Inicio</a></li>
+
+                    <li><a href="temas.html">Temas</a>
+
+                        <ul class="dropdown">
+
+                            <li><a href="tema1.html">Tema 1</a></li>
+
+                            <li><a href="tema2.html">Tema 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="indexfase_3.html">Recursos</a>
+
+                        <ul class="dropdown">
+
+                            <li><a href="recurso1.html">recurso1</a></li>
+
+                            <li><a href="recurso2.html">recurso2</a></li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li> <a href="indexfase_3.html">Aprendizaje</a>
+
+                        <ul class="dropdown">
+
+                            <li><a href="aprendizaje1.html">aprendizaje 1</a></li>
+
+                            <li><a href="aprendizaje2.html">aprendizaje 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="autor.html">Autor
+
+
+                        </a></li>
+
+                    <!-- Seccion central -->
+                    <div class="container">
+
+                        <div class="row justify-content-start">
+
+
+
+                            <aside class="col-4">
+
+
+                                <h4>fan page</h4>
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                    width="200" height="300" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </aside>
+                            <section>
+                                <article>
+                                    <p>
+                                    <h3>introduccion al tema 1</h3>
+                                    <p>
+                                    <article>
+                                        <section class="col-8">
+                                            <p>
+                                            <h4>interaccion humano ordenador</h4>
+                                            </p>
+                                            <p>
+                                                la interaccion humano-ordenador es la interaccion,desarrollo y
+                                                uso
+                                                que el
+                                                ser humano le da
+                                                a las computadoras y hasta qué punto las computadoras se
+                                                desarrollan
+                                                o
+                                                avanzan para interactuar
+                                                con las personas.
+                                                de hecho actualmente la interaccion humano ordenador es una
+                                                disciplina
+                                                llamada HCI
+                                                que se encarga de analizar la usabilidad,
+                                                seguridad y funcionalidad,su fundador escribio "escribe que HCI
+                                                se
+                                                está
+                                                centrando cada vez más en las personas.
+                                                y Se ha expandido para crear soluciones para proyectos
+                                                como la accesibilidad para las personas mayores, los
+                                                discapacitados
+                                                cognitivos y físicos"John M. Carroll</p>
+                                            <img src="imagenes fase 3/ordenador.jpg" alt="ordenador ">
+
+                                            <h4> Referencias bibliograficas</h4>
+                                            <p> Interacción Humano-Computador | SCO2 - Sociedad Colombiana de
+                                                Computación.
+                                                (s. f.). sociedad colombiana de computacion. Recuperado 18 de
+                                                julio
+                                                de 2021,
+                                                de http://sco2.org/capitulo-de-hci/ </p>
+                                        </section>
+                        </div>
+                    </div>
+                    <footer>
+                        <p>
+                            © Copyleft diseñopaginasweb.org | fecha de actualización: <br>
+                            diseño y programacion manual mediante herramientas de Software
+                            Libre.
+
+                        </p>
+                        </p>
+
+                    </footer>
+
+
+
+</html>
