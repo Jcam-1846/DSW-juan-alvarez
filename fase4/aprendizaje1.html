@@ -9,16 +9,25 @@
     <link rel="stylesheet" href="css/misEstilos.css">
 
     <style> 
-header {/* eneable flex mode. */display: flex;
+header {
+    /* eneable flex mode. */
+    display: flex;
     /*llena todo el espacio de header.*/
-    align-items: center  ;
     justify-content:space-between;
 /*alinea los elementos en el centro. */ 
+    align-items: center ;
+    }
 
+.container{
+    background-color: rgb(68, 151, 230);
 }
 
+    
 
 @media(max-width: 600px) {
+    .container{
+        background-color: blue;
+    }
 .menu {
     flex-direction: column;
     align-items: flex-start;

@@ -4,7 +4,7 @@
 }
 
 header{
-    background-color: rgb(118, 187, 228);
+    background-color: rgb(110, 129, 143);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,19 +17,19 @@ header{
 
 aside{
     grid-column: 1/2;
-    background-color: rgb(67, 168, 199);
+    background-color: rgb(67, 70, 71);
 }
 
 
 section{
     grid-column: 2/5;
-    background-color: rgb(78, 200, 199);
+    background-color: rgb(126, 131, 131);
 
 }
 
 footer{
     text-align:center ;
-    background-color: rgb(1,1,1);
+    background-color: rgb(196, 195, 195);
     color: white;
     padding: 10px;
 }
@@ -42,7 +42,7 @@ nav ul {
      list-style: none;
      padding: 3px;
      color: cornsilk;
-     background: black;
+     background: rgb(71, 70, 70);
     
  }
 
@@ -56,7 +56,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     color: white;
-    background: chocolate;
+    background: rgb(117, 184, 180);
     height: 25px;
     text-decoration: none;
 }
