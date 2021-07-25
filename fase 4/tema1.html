@@ -20,21 +20,27 @@ tema1.html
 
         }
 
+        .container {
+            background-color: cornflowerblue;
+        }
 
         @media(max-width: 600px) {
+            .container {
+                background-color: darkblue;
+            }
+
             .menu {
                 flex-direction: column;
                 align-items: flex-start;
-                background-color: aqua;
             }
+
 
             header {
                 /*coloca los elementos verticales.*/
-                flex-direction: column;
+                flex-direction: colum;
                 /*alinea los items al principio(the left) of the header */
-                align-items: flex-start;
+                align-items: flex-star;
             }
-
         }
     </style>
 
@@ -66,7 +72,7 @@ tema1.html
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="indexfase_4.html">Inicio</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -124,16 +130,21 @@ tema1.html
 
     <body>
 
-        
 
 
 
 
 
-            <!-- Seccion central -->
-            <div class="contenedor">
-                <aside>
 
+
+
+
+        <div class="container">
+            <div class="row">
+
+
+
+                <aside class="col-4">
                     <h4>Fan page</h4>
                     <iframe
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
@@ -141,54 +152,58 @@ tema1.html
                         allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-                    <section>
-                        <article>
-                            <p>
-                            <h3>Introduccion al tema 1</h3>
-                            <p>
-                            <article>
-                                <h4>Interfas de usuarios</h4>
-                                <p>
-                                    la interfas del usuario es aquella que permite la interaccion entre un humano y una
-                                    maquina faciulitando el uso y comunicacion
-                                    con dicha maquina.
-                                    pueden ser de hadware que es donde el usuario puede compartir,guardar o grabar
-                                    informacion y archivos en una maquina
-                                    o pueden ser tambien de sofware que es donde el usuario da ordenes a la maquina y
-                                    puede visualizar las respuestas a dicha orden.
-
-                                </p>
-                                
-                                <img src="imagenes fase 3/interfas.png" alt="interfas usuario">
-                            </article>
-                            </p>
-                            <h4> Referencias bibliograficas</h4>
-                                <p> Corrales, J. A. (2021, 12 febrero). Interfaz de usuario o UI: ¿qué es y cuáles son
-                                    sus características? Rock Content - ES.
-                                    https://rockcontent.com/es/blog/interfaz-de-usuario/ </p>
-                                <p> ¿Qué es la Interacción Humano-Computadora? |. (s. f.). opinno. Recuperado 18 de
-                                    julio de 2021, de
-                                    https://blog.opinno.io/es/blog/que-es-la-interaccion-humano-computadora </p>
-                        </article>
-                        <br>
-                        <br>
-                        <article class="centrado">
+                </aside>
 
 
+                <section class="col-8">
 
-
-                        </article>
-                    </section>
-                    <!-- Pie de página -->
-                    <footer>
+                    <article>
                         <p>
-                            © Copyleft diseñopaginasweb.org | fecha de actualización: <br>
-                            diseño y programacion manual mediante herramientas de Software Libre.
+                        <h3>Introduccion al tema 1</h3>
+                        <p>
+                        <article>
+                            <h4>Interfas de usuarios</h4>
+                            <p>
+                                la interfas del usuario es aquella que permite la interaccion entre un humano y
+                                una
+                                maquina faciulitando el uso y comunicacion
+                                con dicha maquina.
+                                pueden ser de hadware que es donde el usuario puede compartir,guardar o grabar
+                                informacion y archivos en una maquina
+                                o pueden ser tambien de sofware que es donde el usuario da ordenes a la maquina
+                                y
+                                puede visualizar las respuestas a dicha orden.
 
-                        </p>
-                        </p>
+                            </p>
 
-                    </footer>
+                            <img src="imagenes fase 3/interfas.png" alt="interfas usuario">
+                        </article>
+                        </p>
+                        <article class="centrado"></article>
+                        <h4> Referencias bibliograficas</h4>
+                        <p> Corrales, J. A. (2021, 12 febrero). Interfaz de usuario o UI: ¿qué es y cuáles son
+                            sus características? Rock Content - ES.
+                            https://rockcontent.com/es/blog/interfaz-de-usuario/ </p>
+                        <p> ¿Qué es la Interacción Humano-Computadora? |. (s. f.). opinno. Recuperado 18 de
+                            julio de 2021, de
+                            https://blog.opinno.io/es/blog/que-es-la-interaccion-humano-computadora </p>
+                    </article>
+                </section>
+
+
+
+
+                <!-- Pie de página -->
+                <footer>
+                    <p>
+                        © Copyleft diseñopaginasweb.org | fecha de actualización: <br>
+                        diseño y programacion manual mediante herramientas de Software Libre.
+
+                    </p>
+                    </p>
+            </div>
+        </div>
+        </footer>
     </body>
 
 </html>

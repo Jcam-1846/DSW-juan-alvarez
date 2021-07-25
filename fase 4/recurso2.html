@@ -12,166 +12,238 @@ recurso2.html
 
 <body>
 
-    <!-- Sección del encabezado -->
-    <header>
-        <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200">
-        <h1>Diseño de Sitios Web:La interfaz de usuarios, interacción Humano Ordenador </h1>
-        <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200">
+
+    <style>
+        header {
+            /* eneable flex mode. */
+            display: flex;
+            /*llena todo el espacio de header.*/
+            align-items: center;
+            justify-content: space-between;
+            /*alinea los elementos en el centro. */
+
+        }
+
+        .container {
+            background-color: cornflowerblue;
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                background-color: darkblue;
+            }
+
+            .menu {
+                flex-direction: column;
+                align-items: flex-start;
+
+            }
+
+            header {
+                /*coloca los elementos verticales.*/
+                flex-direction: column;
+                /*alinea los items al principio(the left) of the header */
+                align-items: flex-start;
+            }
+
+        }
+    </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200" />
+            <h1>Interfaz de usuario e interaccion humano ordenador</h1>
+            <img src="imagenes fase 3/imagen logo.jpg" alt="Imagen de logo" height="100" width="200" />
+        </header>
+
+
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="indexfase_4.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Temas
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="tema1.html">tema 1</a></li>
+                                    <li><a class="dropdown-item" href="tema2.html">tema 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recursos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="recurso1.html">recurso 1</a></li>
+                                    <li><a class="dropdown-item" href="recurso2.html">recurso 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    aprendizaje
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="aprendizaje1.html">aprendizaje 1</a></li>
+                                    <li><a class="dropdown-item" href="aprendizaje2.html">aprendizaje 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                    style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="autor.html">autor</a>
+                                    </li>
+                                </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+        </nav>
+        <div class="container">
+            <div class="row">
 
 
 
-    </header>
-
-    <!-- Barra de menú horizontal -->
-    <nav>
-
-        <ul class="menu">
-            <ul>
-                <li><a href="indexfase_3.html">Inicio</a></li>
-
-                <li><a href="indexfase_3.html">Temas</a>
-
-                    <ul class="dropdown">
-
-                        <li><a href="tema1.html">Tema 1</a></li>
-
-                        <li><a href="tema2.html">Tema 2</a></li>
-
-                    </ul>
-
-                </li>
-
-                <li><a href="indexfase_3.html">Recursos</a>
-
-                    <ul class="dropdown">
-
-                        <li><a href="recurso1.html">recurso1</a></li>
-
-                        <li><a href="recurso2.html">recurso2</a></li>
-
-                    </ul>
+                <aside class="col-4">
 
 
-                </li>
+                    <h4>fan page</h4>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="260" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
 
-                <li> <a href="indexfase_3.html">Aprendizaje</a>
-
-                    <ul class="dropdown">
-
-                        <li><a href="aprendizaje1.html"> aprendizaje1</a></li>
-
-                        <li><a href="aprendizaje2.html">aprendizaje 2</a></li>
-
-                    </ul>
-
-                </li>
-
-                <li><a href="autor.html">Autor
+                    <iframe width="260" height="315" src="https://www.youtube.com/embed/OcXpU-W7eEU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
 
 
-                    </a></li>
+                </aside>
 
-                <!-- Seccion central -->
-                <div class="contenedor">
-                    <aside>
 
-                        <h4>fan page</h4>
-                        <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="200" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+
+                <section class="col-8">
+
+                    <h3>introduccion al recurso 2</h3>
+
+                    <article>
+                        <h4>interaccion humano ordenador</h4>
+                        <h3>
+
+
+
+                            La disciplina que estudia cómo los individuos interactúan con las
+                            computadoras y
+                            hasta qué punto las pc se desarrollan para interactuar con los
+                            individuos se
+                            denomina Relación Humano-Computadora.
+
+                            Con la época, su grado de sofisticación incrementó hasta el punto en que
+                            la
+                            finalidad era hacer que la relación hombre-computadora se asemejara a la
+                            relación entre humanos, de la manera más natural y sin fisuras viable.
+
+
+                            ¿Por qué es fundamental el análisis de la Relación Humano-Computadora?
+
+                            Carroll, creador y fundador del campo de la relación hombre-computadora,
+                            redacta
+                            que HCI se está centrando cada vez más en los individuos. En esta etapa
+                            tan
+                            evolucionada, los diseñadores de relación por el momento no permanecen
+                            en el comercio del diseño, sino en el comercio de los individuos.
+                            En última instancia, el Diseño de Relación Humana se basa en producir
+                            sistemas y
+                            marcos que mejoren la vida de los individuos.
+
+                            Partiendo de las necesidades del comprador, desarrollamos herramientas y
+                            técnicas para edificar sistemas adecuados que cubran dichas necesidades.
+
+                            Empieza por comprender las necesidades de los usuarios, para edificar el
+                            sistema
+                            según aquellas necesidades.
+
+
+
+                        </h3>
+                    </article>
+
+                    <h3> recurso2</h3>
+
+
+                    <audio controls>
+                        <source src="audiosfase3/audiorecurso2.m4a" type="audio/ogg">
+
+                    </audio>
+                    <p>
+                        <iframe src="pdf/InteraccionHumanoComputadora.pdf" frameborder="40" width="400" height="600"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                        <section>
-                            <article>
-
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OcXpU-W7eEU"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                            </article>
-                        </section>
-                        <section>
-                            <article>
-
-                                <h3>introduccion al recurso 2</h3>
-
-                                <article>
-                                    <h4>interaccion humano ordenador</h4>
-                                    <h3>
+                    </p>
+                </section>
 
 
 
-                                        La disciplina que estudia cómo los individuos interactúan con las computadoras y
-                                        hasta qué punto las pc se desarrollan para interactuar con los individuos se
-                                        denomina Relación Humano-Computadora.
-
-                                        Con la época, su grado de sofisticación incrementó hasta el punto en que la
-                                        finalidad era hacer que la relación hombre-computadora se asemejara a la
-                                        relación entre humanos, de la manera más natural y sin fisuras viable.
-
-
-                                        ¿Por qué es fundamental el análisis de la Relación Humano-Computadora?
-
-                                        Carroll, creador y fundador del campo de la relación hombre-computadora, redacta
-                                        que HCI se está centrando cada vez más en los individuos. En esta etapa tan
-                                        evolucionada, los diseñadores de relación por el momento no permanecen
-                                        en el comercio del diseño, sino en el comercio de los individuos.
-                                        En última instancia, el Diseño de Relación Humana se basa en producir sistemas y
-                                        marcos que mejoren la vida de los individuos.
-
-                                        Partiendo de las necesidades del comprador, desarrollamos herramientas y
-                                        técnicas para edificar sistemas adecuados que cubran dichas necesidades.
-
-                                        Empieza por comprender las necesidades de los usuarios, para edificar el sistema
-                                        según aquellas necesidades.
 
 
 
-                                    </h3>
-                                </article>
+                </article>
+                <br>
+                <br>
+
+                </article>
+                </section>
+                <!-- Pie de página -->
+                <footer>
+                    <footer>
+                        <p>
+                            © Copyleft diseñopaginasweb.org | fecha de actualización: <br>
+                            diseño y programacion manual mediante herramientas de Software Libre.
 
 
+                        </p>
 
-                            </article>
-                            <br>
-                            <br>
-                            <article class="centrado">
-                                <h3> recurso2</h3>
-                                <section>
-
-                                    <audio controls>
-                                        <source src="audiosfase3/audiorecurso2.m4a" type="audio/ogg">
-
-                                    </audio>
-                                </section>
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_1.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_2.jpg" alt="ordenador">
-
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_3.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_4.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_5.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_6.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_7.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_8.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_9.jpg" alt="ordenador">
-                                <img src="imagenes fase 3/imagen recurso 2/ordenador1024_10.jpg" alt="ordenador">
-
-                            </article>
-                        </section>
-                        <!-- Pie de página -->
-                        <footer>
-                            <footer>
-                                <p>
-                                    © Copyleft diseñopaginasweb.org | fecha de actualización: <br>
-                                    diseño y programacion manual mediante herramientas de Software Libre.
-
-
-                                </p>
-
-                            </footer>
-                            <a href="Fase3">fase3</a>
-                        </footer>
-</body>
+                    </footer>
+                    <a href="Fase3">fase3</a>
+                </footer>
+    </body>
 
 </html>
